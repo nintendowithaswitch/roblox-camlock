@@ -55,10 +55,14 @@ function is_hit_part_visible(hitpart: BasePart)
     
     local result = workspace:Raycast(origin, direction, raycastParams)
     
-    if result then
-        return result.Instance:IsDescendantOf(hitpart.Parent)
+    if settings.checks.visible then
+        if result then
+            return result.Instance:IsDescendantOf(hitpart.Parent)
+        else
+            return true
+        end
     else
-        return true
+        return false
     end
 end
 
