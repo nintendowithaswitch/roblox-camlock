@@ -1,0 +1,1 @@
+# basic camlock i made for roblox fps games doesnt get closest player to viewport center so its kinda buns but can easily be implemented (semi-universal, probably wont work on games with custom character systems)
